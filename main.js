@@ -31,7 +31,7 @@ function library() {
     }
 }
 
-function gym() {
+function gym(){
     alert("So you want to go to the gym...");
     let choice2 = prompt("You see someone walking in the gym, do you want to enter the gym and see who or what it is? 1 for yes and 2 for no.");
 
@@ -40,18 +40,20 @@ function gym() {
     } else {
         alert("You decide it's best to leave the gym and avoid the unknown.");
     }
-    let hallway = ("You leave the gym do you want go back or ")
-    AutoShopPath();
+    let hallway = ("You want to leave the gym do you want go back or go to the library ")
+    
 function AutoShopPath() {
     let choice3 = prompt ("You hear strange noises. Do you investigate or run away?")
-    if (choice3 == 'investigate') {
+        if (choice3 == 'investigate') {
         alert("You discover a car trunk filled with candy!");
     } else {
         alert("You trip and fall... The ghost catches you!");
     }
+}
     
 }
 function endGame(name) {
     alert("Thank you for playing, "+name+"!")
 }
+
 main();
